@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Global CSS */
+
+.para {
+  width: 80%;
+  text-align: left;
+}
+
+.heading {
+  margin: 1em 0;
+}

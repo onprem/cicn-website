@@ -6,7 +6,7 @@ import styles from "./nav.module.css";
 const Nav = () => {
   return (
     <nav className={styles.nav}>
-      <Link className={styles.link} to="/home">
+      <Link className={styles.link} to="/">
         Home
       </Link>
       <Link className={styles.link} to="/papers">

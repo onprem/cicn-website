@@ -6,6 +6,9 @@ import Container from "Components/Container";
 import Footer from "Components/Footer";
 import Top from "Pages/Top";
 
+import Home from "Pages/Home";
+import Papers from "Pages/Papers"
+
 import styles from "./App.module.css";
 
 function App() {
@@ -15,7 +18,12 @@ function App() {
       <Nav />
       <Container>
         <Switch>
-          <Route path="/">Welcome to CICN2020</Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/papers">
+            <Papers />
+          </Route>
         </Switch>
       </Container>
       <Footer />
