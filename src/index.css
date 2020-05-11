@@ -23,3 +23,22 @@ code {
 .heading {
   margin: 1em 0;
 }
+
+.link {
+  color: #036efa;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #dddddd;
+}

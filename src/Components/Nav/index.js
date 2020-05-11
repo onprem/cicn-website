@@ -10,22 +10,31 @@ const Nav = () => {
         Home
       </Link>
       <Link className={styles.link} to="/papers">
-        Papers
+        Call for Papers
       </Link>
       <Link className={styles.link} to="/schedule">
         Important Dates/Schedules
       </Link>
-      <Link className={styles.link} to="/sponsers">
-        Sponsers
+      <Link className={styles.link} to="/paper-submission">
+        Paper Submission
+      </Link>
+      <Link className={styles.link} to="/registration">
+        Registration
+      </Link>
+      <Link className={styles.link} to="/accepted-papers">
+        Accepted Papers
+      </Link>
+      <Link className={styles.link} to="/committees">
+        Committees
       </Link>
       <Link className={styles.link} to="/keynote">
         Keynote Speakers
       </Link>
+      <Link className={styles.link} to="/sponsers">
+        Sponsers
+      </Link>
       <Link className={styles.link} to="/accomodation">
         Accomodation
-      </Link>
-      <Link className={styles.link} to="/committees">
-        Committees
       </Link>
       <Link className={styles.link} to="/past-conferences">
         Past Conferences

@@ -7,7 +7,10 @@ import Footer from "Components/Footer";
 import Top from "Pages/Top";
 
 import Home from "Pages/Home";
-import Papers from "Pages/Papers"
+import Papers from "Pages/Papers";
+import Schedule from "Pages/Schedule";
+import PaperSubmission from "Pages/PaperSubmission";
+import Registration from "Pages/Registration";
 
 import styles from "./App.module.css";
 
@@ -23,6 +26,15 @@ function App() {
           </Route>
           <Route exact path="/papers">
             <Papers />
+          </Route>
+          <Route exact path="/schedule">
+            <Schedule />
+          </Route>
+          <Route exact path="/paper-submission">
+            <PaperSubmission />
+          </Route>
+          <Route exact path="/registration">
+            <Registration />
           </Route>
         </Switch>
       </Container>
