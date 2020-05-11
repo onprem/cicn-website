@@ -1,0 +1,19 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6dbe0;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  padding: 0.8em 1em;
+  font-weight: 500;
+}
+
+.link:hover {
+  background: #94657a;
+  color: white;
+}

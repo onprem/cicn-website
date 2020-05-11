@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  --sidebar: 15%;
+}
+
+.side {
+  width: var(--sidebar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  border-width: 0 1px;
+}
+
+.conf {
+  width: 100%;
+  text-align: center;
+  background: #ffff04;
+  padding: 1em 0;
+  margin: 3em 0;
+}
+
+.reg {
+  composes: conf;
+  background: #0b369b;
+  font-weight: 500;
+  color: white;
+}
+
+.img {
+  max-width: 40%;
+  margin: 1em 0;
+}
+
+.imgw {
+  composes: img;
+  max-width: 60%;
+}
+
+.cps {
+  composes: img;
+  max-width: 50%;
+  margin-bottom: 4em;
+}
+
+.regBtn {
+  background: #a71212;
+  padding: 1em 2em;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  margin-bottom: 2em;
+}
+
+.para {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.regLink {
+  color: #a71212;
+  margin-top: 2em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - (2 * var(--sidebar)));
+  min-height: 80vh;
+}

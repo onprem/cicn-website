@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+
+import Nav from "Components/Nav";
+import Container from "Components/Container";
+import Footer from "Components/Footer";
+import Top from "Pages/Top";
+
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <Top />
+      <Nav />
+      <Container>
+        <Switch>
+          <Route path="/">Welcome to CICN2020</Route>
+        </Switch>
+      </Container>
+      <Footer />
     </div>
   );
 }
