@@ -43,3 +43,31 @@
   font-size: 1.4em;
   margin: 0;
 }
+
+@media only screen and (max-width: 1400px) {
+  .top {
+    font-size: 0.8em;
+  }
+  .logo {
+    max-height: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top {
+    height: 40vh;
+    padding: 2em 1em;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .sub {
+    font-size: 0.7em;
+  }
+
+  .text {
+    margin: 0 1em;
+  }
+}

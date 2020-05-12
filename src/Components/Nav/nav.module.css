@@ -18,3 +18,95 @@
   background: #94657a;
   color: white;
 }
+
+.hamdiv {
+  display: none;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
+
+.btn {
+  /* display: none; */
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 1.2em 0;
+  --space: 12px;
+  --height: 4px;
+  cursor: pointer;
+  width: 40px;
+  z-index: 10;
+}
+
+.btn::before,
+.btn::after {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  position: absolute;
+  right: 0;
+  transition: margin-top 0.3s ease-in, transform 0.2s ease-out 0.3s;
+}
+
+.btn,
+.btn::before,
+.btn::after {
+  height: 0px;
+  border-width: calc(var(--height) / 2) 0;
+  border-color: black;
+  border-style: solid;
+  background-color: black;
+}
+
+.btn::before {
+  margin-top: calc(var(--space) * -1);
+}
+
+.btn::after {
+  margin-top: calc(var(--space) - var(--height));
+}
+
+.open {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.open::before,
+.open::after {
+  margin-top: 0;
+  border-color: black;
+  transform-origin: center;
+}
+
+.open::before {
+  transform: rotate(45deg);
+}
+
+.open::after {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 500px) {
+  .hamdiv {
+    display: block;
+    z-index: 11;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    flex-direction: column;
+    /* display: none; */
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navopen {
+    pointer-events: unset;
+    opacity: 1;
+  }
+}

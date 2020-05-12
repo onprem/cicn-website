@@ -75,3 +75,13 @@
   padding: 4em 0;
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    --sidebar: 0%;
+  }
+
+  .side {
+    display: none;
+  }
+}

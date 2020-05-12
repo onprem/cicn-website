@@ -43,3 +43,19 @@ code {
 .table tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+@media only screen and (max-width: 1400px) and (min-width: 500px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .para {
+    width: 90%;
+  }
+
+  .table {
+    font-size: 0.8em;
+  }
+}
