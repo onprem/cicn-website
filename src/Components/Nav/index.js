@@ -30,11 +30,11 @@ const Nav = () => {
       <Link className={styles.link} to="/keynote">
         Keynote Speakers
       </Link>
-      <Link className={styles.link} to="/sponsers">
-        Sponsers
+      <Link className={styles.link} to="/sponsors">
+        Sponsors
       </Link>
-      <Link className={styles.link} to="/accomodation">
-        Accomodation
+      <Link className={styles.link} to="/accommodation">
+        Accommodation
       </Link>
       <Link className={styles.link} to="/past-conferences">
         Past Conferences

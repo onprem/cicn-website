@@ -3,7 +3,7 @@ import React from "react";
 const Schedule = () => {
   return (
     <>
-      <h2>Important Dates/Schedule</h2>
+      <h2 className="heading">Important Dates/Schedule</h2>
       <p className="para">
         <table className="table">
           <tr>
