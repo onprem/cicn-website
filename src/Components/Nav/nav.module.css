@@ -59,6 +59,10 @@
   background-color: black;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn::before {
   margin-top: calc(var(--space) * -1);
 }
@@ -103,6 +107,11 @@
     pointer-events: none;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    font-size: 1.2em;
+  }
+
+  .link {
+    padding: 0.5em 1em;
   }
 
   .navopen {
